@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- import latest release version of all components from polygit -->
+    <link rel="import" href="https://polygit.org/components/polymer/polymer.html">
+    <script src="https://polygit.org/components/webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="../icon-toggle.html" />
+
+</head>
+
+<body>
+  <dom-module id="element-name">
+
+        <template>
+          <style>
+            /* CSS rules for your element */
+          </style>
+
+          <!-- local DOM for your element -->
+
+          <div>{{greeting}}</div> <!-- data bindings in local DOM -->
+        </template>
+
+        <script>
+          // element registration
+          Polymer({
+            is: "element-name",
+
+            // add properties and methods on the element's prototype
+
+            properties: {
+              // declare properties for the element's public API
+              greeting: {
+                type: String,
+                value: "Hello!"
+              }
+            }
+          });
+        </script>
+
+      </dom-module>
+      <element-name></element-name>
+
+    <icon-toggle pressed></icon-toggle>
+      <icon-toggle ></icon-toggle>
+</body>
+
+</html>
